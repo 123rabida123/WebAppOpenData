@@ -1,0 +1,85 @@
+.hidden{
+    display: none;
+}
+
+button{
+    padding: 40px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    transition: 250ms background-color;
+    border-radius: 8px;
+    width: 100px;
+    display: flex;
+    position: relative;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:disabled:hover{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    padding: 40px;
+}
+
+#stepProgressBar{
+    display: flex;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.step{
+    text-align: center;
+    width: 100px;
+}
+
+.step-text{
+    margin-bottom: 30px;
+    color: olivedrab;
+}
+
+.bullet{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 3px solid olivedrab;
+    color:olivedrab ;
+    display: inline-block;
+    position: relative;
+    transition: background-color 500ms;
+    line-height: 20px;
+}
+
+.bullet.completed{
+    color: white;
+    background-color: olivedrab;
+
+}
+
+.bullet.completed::after{
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: olivedrab;
+    right: -100px;
+    bottom: 10px;
+
+}

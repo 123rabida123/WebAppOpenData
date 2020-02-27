@@ -1,0 +1,161 @@
+body {
+    background-image: url("/images/back.jpg");
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, sans-serif;
+    background-size: 3000px 4000px;
+    line-height : normal;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header a.active {
+    background-color: olivedrab;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+
+.header-link a{
+    color: olivedrab;
+    visibility:hidden;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+.list {
+    padding: 12px;
+    font-size: 20px;
+    color: olivedrab;
+}
+
+div.xz{
+
+    text-align: center;
+}
+
+div.xy{
+
+    background-color: olivedrab;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+div.xx{
+
+    background-color: #dddddd;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+
+}
+
+div.exx {
+    padding: 10px 10px;
+    width:800px;
+    height: 2000px;
+    position: static;
+    margin: auto;
+
+
+}
+
+
+div.ex1 {
+    width:800px;
+    position: static;
+    background-color: #eceef1;
+    padding: 5px 5px;
+
+}
+
+div.ex2 {
+    padding: 5px 5px;
+    max-width:800px;
+    position: static;
+    background-color: #333a45;
+    color: white;
+}
+
+.h{color: olivedrab}
+
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    position: center;
+    margin-left:15%;
+    margin-right:10%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: olivedrab;
+    color: white;
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    background-color: #dddddd;
+}
