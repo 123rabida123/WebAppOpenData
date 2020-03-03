@@ -42,7 +42,7 @@
 <div class="exx">
 <div style="padding-left:20px">
 
-    <h2 class="h">Welcome to PUB_LOGD is always available to help users ! </h2>
+    <h2 class="h">Welcome to PUB_LOGD is always available to help users! </h2>
     <p>This plateform is easy Toolkit and turnkey solution, designed for users to improve services of Government with Open Data.
         It is using powerful of linked Open Data technology and Docker technology .</p>
     <p> PUB_LOGD includes a unique set of integrated features:
@@ -137,17 +137,26 @@
                       <pre>   - ENABLE_UPLOAD=true</pre>
 
 
-                      <pre> neo4j:</pre>
-                      <pre>  image: neo4j</pre>
-                      <pre>  ports:</pre>
-                      <pre>   - "7687:7687"</pre>
-                      <pre>   - "7474:7474"</pre>
-                      <pre>  environment:</pre>
-                      <pre>   - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes</pre>
-                      <pre>   - NEO4J_AUTH=neo4j/admin</pre>
-                      <pre>   - SECURE_FILE_PERMISSIONS=yes</pre>
-                      <pre>  volumes:</pre>
-                      <pre>   - $HOME/neo4j/data:/data \neo4j</pre>
+                     <pre> neo4j:</pre>
+                   <pre>    image: neo4j:3.5  </pre>
+                   <pre>    ports:  </pre>
+                        <pre>  - "7474:7474"  </pre>
+                        <pre>  - "7687:7687"  </pre>
+                      <pre>  environment:  </pre>
+                       <pre>  - NEO4J_dbms_unmanaged__extension__classes=semantics.extension=/rdf  </pre>
+                       <pre>  - NEO4J_dbms_security_procedures_whitelist=apoc.*,semantics.*  </pre>
+                       <pre>  - NEO4J_dbms_security_procedures_unrestricted=apoc.*,semantics.*  </pre>
+                       <pre>  - NEO4J_dbms_security_procedures_unrestricted=algo.,apoc.  </pre>
+                       <pre>  - NEO4J_dbms_security_procedures_unrestricted=apoc.trigger.*,apoc.meta.*  </pre>
+                       <pre>  - NEO4J_apoc_export_file_enabled=true  </pre>
+                       <pre>  - NEO4J_apoc_import_file_enabled=true  </pre>
+                       <pre>  - NEO4J_apoc_import_file_use__neo4j__config=true  </pre>
+                       <pre>  - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes  </pre>
+                       <pre>  - NEO4J_AUTH=neo4j/admin  </pre>
+                       <pre>  - SECURE_FILE_PERMISSIONS=yes  </pre>
+                       <pre>volumes:  </pre>
+                      <pre>  - $PWD/plugin_neo:/var/lib/neo4j/plugins  </pre>
+                      <pre>  - $PWD/data-neo4j:/var/lib/neo4j/import  </pre>
 
 
                       <pre> pubby:</pre>
