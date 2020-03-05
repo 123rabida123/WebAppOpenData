@@ -88,7 +88,7 @@
         </p>
 
         <p>
-            <a class="a_href" href="https://www.statista.com/"> Statista data portal/</a>
+            <a class="a_href" href="https://www.statista.com/"> Statista data portal</a>
         </p>
         <p>
             <a class="a_href" href="https://www.forschungsdatenzentrum.de/en/statistical-portal"> statistical portal</a>
