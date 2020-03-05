@@ -63,7 +63,7 @@
             <Button id="previousBtn" onclick="myFunction('http://localhost/')" disabled>Silk</Button>
         </div>
         <div class="step">
-            <p class="step-text">Storage</p>
+            <p class="step-text">Storing</p>
             <div class="bullet">3</div>
             <dir></dir>
             <Button id="finishBtn" onclick="myFunction('http://localhost:3030/')" disabled>Fuseki</Button>
@@ -75,7 +75,7 @@
             <Button id="hellosBtn" onclick="myFunction('http://localhost:7474/browser/')" disabled>Neo4j</Button>
         </div>
         <div class="step">
-            <p class="step-text">Publiking</p>
+            <p class="step-text">Publishing</p>
             <div class="bullet">5</div>
             <dir></dir>
             <Button id="byBtn" onclick="myFunction('http://localhost:8080/pubby/')" disabled>Pubby</Button>
