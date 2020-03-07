@@ -21,7 +21,7 @@
         <a href="/workspace">WORKSPACE</a>
         <a class="active"  href="/test">DATA PORTALS</a>
         <a href="/guide">DISCOVERY</a>
-        <a href="/guide">TRAINING</a>
+        <a href="/bloc">TRAINING</a>
 
     </div>
 </div>

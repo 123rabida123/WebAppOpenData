@@ -23,7 +23,7 @@
         <a class="active" href="/workspace">WORKSPACE</a>
         <a href="/test">DATA PORTALS</a>
         <a href="/guide">DISCOVERY</a>
-        <a href="/guide">TRAINING</a>
+        <a href="/bloc">TRAINING</a>
 
     </div>
 </div>
@@ -47,7 +47,7 @@
 
 
 <div class="container">
-    <h1> methodology steps for operating open statical data </h1>
+    <h1> Methodology steps for operating open data </h1>
 
     <div id="stepProgressBar">
         <div class="step ">
