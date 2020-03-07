@@ -68,6 +68,15 @@ body {
     color: olivedrab;
 }
 
+
+div.container{
+    text-align: left;
+    font-size: 15px;
+    width:500px;
+    position: static;
+}
+
+
 div.xz{
 
     text-align: center;
