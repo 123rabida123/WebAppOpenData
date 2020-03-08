@@ -13,16 +13,21 @@
 </head>
 <body>
 
+
 <div class="header">
-    <a href="index.html" class="logo">Linked Open Statical Data</a>
+    <a href="index.html" class="logo">PUB_LOGD</a>
     <div class="header-right">
-        <a href="index.html">GUIDE</a>
-        <a  href="/software">SOFTWARE</a>
-        <a  class="active"   href="/test">WORKSPACE</a>
+        <a href="/guide">GUIDE</a>
+        <a href="/software">SOFTWARE</a>
+        <a href="/workspace">WORKSPACE</a>
+        <a href="/test">DATA PORTALS</a>
+        <a class="active" href="/cmd">DISCOVERY</a>
         <a href="/bloc">TRAINING</a>
-        <a  href="/bloc">DATA</a>
+
     </div>
 </div>
+
+
 
 <div class="icon-bar">
     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -32,16 +37,17 @@
     <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
 
-<div class="content">
+<div class="container">
+<h2>Frequently asked questions </h2>
+    <ol>
+        <li> What is PUB_LOGD: </li>
+
+    </ol>
 
 
-    <h3>Sticky Social Bar</h3>
-    <p>The sticky social bar will stick to the screen when you scroll.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
 
 </div>
-
-
 </body>
 </html>

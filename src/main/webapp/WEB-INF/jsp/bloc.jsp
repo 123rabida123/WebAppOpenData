@@ -21,7 +21,7 @@
         <a href="/software">SOFTWARE</a>
         <a href="/workspace">WORKSPACE</a>
         <a href="/test">DATA PORTALS</a>
-        <a href="/guide">DISCOVERY</a>
+        <a href="/cmd">DISCOVERY</a>
         <a class="active"  href="/bloc">TRAINING</a>
 
     </div>
