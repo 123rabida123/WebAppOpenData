@@ -1,0 +1,170 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://example.org/dataset/file-logement> a qb:DataSet ;
+	rdfs:label "Census data grouped by stabel logement" .
+
+_:node1deitqcbdx1 a qb:DataStructureDefinition .
+
+_:node1deitqcbdx2 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/province-log> rdfs:label "ProvinceLog" .
+
+_:node1deitqcbdx2 qb:dimension <http://example.org/def/statistical-dimemsion/province-log> .
+
+_:node1deitqcbdx1 qb:component _:node1deitqcbdx2 .
+
+_:node1deitqcbdx3 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/Regime-doccupation> rdfs:label "Regime-doccupation" .
+
+_:node1deitqcbdx3 qb:dimension <http://example.org/def/statistical-dimemsion/Regime-doccupation> .
+
+_:node1deitqcbdx1 qb:component _:node1deitqcbdx3 .
+
+_:node1deitqcbdx4 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/logement-classique> rdfs:label "Logement-classique" .
+
+_:node1deitqcbdx4 qb:measure <http://example.org/def/statistical-dimemsion/logement-classique> .
+
+_:node1deitqcbdx1 qb:component _:node1deitqcbdx4 .
+
+<http://example.org/dataset/file-logement> qb:structure _:node1deitqcbdx1 .
+
+<http://example.org/R%C3%A9gion+de+Bruxelles-Capitale> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Région de Bruxelles-Capitale" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/R%C3%A9gion+de+Bruxelles-Capitale> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "487,582" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "93,504" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "581,086" .
+
+<http://example.org/Province+d%27Anvers> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province d'Anvers" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+d%27Anvers> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "732,668" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "102,724" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "835,392" .
+
+<http://example.org/Province+du+Limbourg> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province du Limbourg" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+du+Limbourg> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "336,818" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "38,537" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "375,355" .
+
+<http://example.org/Province+de+Flandre+orientale> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province de Flandre orientale" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+de+Flandre+orientale> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "607,145" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "78,970" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "686,115" .
+
+<http://example.org/Province+du+Brabant+flamand> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province du Brabant flamand" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+du+Brabant+flamand> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "439,351" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "53,629" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "492,980" .
+
+<http://example.org/Province+de+Flandre+occidentale> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province de Flandre occidentale" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+de+Flandre+occidentale> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "497,205" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "170,342" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "667,547" .
+
+<http://example.org/Province+du+Brabant+wallon> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province du Brabant wallon" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+du+Brabant+wallon> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "150,558" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "21,150" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "171,708" .
+
+<http://example.org/Province+du+Hainaut> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province du Hainaut" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+du+Hainaut> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "558,666" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "69,394" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "628,060" .
+
+<http://example.org/Province+de+Li%C3%A9ge> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province de Liége" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+de+Li%C3%A9ge> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "450,775" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "61,515" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "512,290" .
+
+<http://example.org/Province+de+Luxembourg> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province de Luxembourg" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+de+Luxembourg> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "108,764" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "25,494" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "134,258" .
+
+<http://example.org/Province+de+Namur> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Province de Namur" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Province+de+Namur> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "194,119" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "30,036" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "224,155" .
+
+<http://example.org/Belgique> a qb:Observation ;
+	qb:dataSet "http://example.org/dataset/file-logement" ;
+	rdfs:label "Belgique" ;
+	<http://example.org/def/statistical-dimemsion/province-log> <http://example.org/Belgique> ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques occupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "4,563,651" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Logements classiques inoccupés" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "745,295" ;
+	<http://example.org/def/statistical-dimemsion/Regime-doccupation> "Total" ;
+	<http://example.org/def/statistical-dimemsion/logement-classique> "5,308,946" .

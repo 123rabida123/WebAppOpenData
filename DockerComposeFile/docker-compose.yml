@@ -1,0 +1,71 @@
+version: "2"
+services:
+
+ opendatav1:
+  image: opendatav1
+  ports:
+    - "8888:8080"
+ 
+ openrefine:
+  image: rhizomik/openrefine-rdf
+  ports:
+    - "3333:3333"
+  volumes:
+    - ./data-open-refine
+
+ silk:
+  image: silkframework/silk-workbench
+  ports:
+    - "80:80"
+  volumes:
+    - ./data-silk
+
+ fuseki:
+  image: secoresearch/fuseki
+  ports:
+    - "3030:3030"
+  environment: 
+    - ADMIN_PASSWORD=admin
+    - ENABLE_DATA_WRITE=true
+    - ENABLE_UPDATE=true
+    - ENABLE_UPLOAD=true
+ 
+   
+ neo4j:
+  image: neo4j:3.5
+  ports:
+    - "7474:7474"
+    - "7687:7687"
+  environment:
+    - NEO4J_dbms_unmanaged__extension__classes=semantics.extension=/rdf
+    - NEO4J_dbms_security_procedures_whitelist=apoc.*,semantics.*
+    - NEO4J_dbms_security_procedures_unrestricted=apoc.*,semantics.*
+    - NEO4J_dbms_security_procedures_unrestricted=algo.,apoc.
+    - NEO4J_dbms_security_procedures_unrestricted=apoc.trigger.*,apoc.meta.*
+    - NEO4J_apoc_export_file_enabled=true
+    - NEO4J_apoc_import_file_enabled=true
+    - NEO4J_apoc_import_file_use__neo4j__config=true
+    - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+    - NEO4J_AUTH=neo4j/admin
+    - SECURE_FILE_PERMISSIONS=yes
+  volumes:
+    - $PWD/plugin_neo:/var/lib/neo4j/plugins
+    - $PWD/data-neo4j:/var/lib/neo4j/import 
+
+    
+ pubby:
+  image: asanchez75/pubby:v0.3.3
+  ports:
+    - "8080:8080"
+  environment:
+    SPARQL_ENDPOINT: "http://dbpedia.org/sparql"
+    PROJECT_HOMEPAGE_URL: "http://dbpedia.org/"
+    PROJECT_NAME: "DBPEDIA"
+    DEFAULT_RESOURCE: "http://dbpedia.org/resource/Wikipedia"
+    DEFAULT_NAMED_GRAPH: "http://dbpedia.org"
+    COMMON_URI_PREFIX: "http://dbpedia.org/resource/"
+    WEB_RESOURCE_PREFIX: "resource/"
+    PUBBY_ROOT_URL: "http://localhost:8080/pubby/"
+
+  restart: always
+  tty: true
