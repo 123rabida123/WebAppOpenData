@@ -12,7 +12,8 @@ docker-compose  up -d
 or 
 docker-compose  up -d --force-recreate --build --remove-orphans
 ```
-
+After that start the Webpack server and open your browser at http://localhost:8888/ .
+ 
 ## Browser Support
 ```
 Chrome ✔    
