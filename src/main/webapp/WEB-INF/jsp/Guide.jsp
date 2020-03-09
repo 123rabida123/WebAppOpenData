@@ -45,6 +45,7 @@
     <h2 class="h">Welcome to PUB_LOGD is always available to help users! </h2>
     <p>This plateform is easy Toolkit and turnkey solution, designed for users to improve services of Government with Open Data.
         It is using powerful of linked Open Data technology and Docker technology .</p>
+    <p>You can install our plateform via this link: <a href="https://github.com/123rabida123/WebAppOpenData"> https://github.com/123rabida123/WebAppOpenData </a> .</p>
     <p> PUB_LOGD includes a unique set of integrated features:
      <ul>
        <li>Cleaning and unifying raw datasets.</li>
@@ -100,88 +101,17 @@
                 <pre>docker-compose version 1.25.4, build 1110ad01</pre></div>
         </div>
      <p></p>
-              <li>Step 3: Copy these instructions for create a file called <strong> docker-compose.yml </strong> in your project directory and paste the following:</li>
+              <li>Step 3: Copy the all folders in your project directory for create a file called <strong> docker-compose.yml </strong> via this link <a href="https://github.com/123rabida123/Docker-File-Tools"> https://github.com/123rabida123/Docker-File-Tools</a>   . </li>
                <p>
                    This Compose file defines five services: Open-Refine, Silk, Fuseki, Neo4j, Pubby.
                </p>
                <p>
                   <strong> Important:  </strong> Use Visual Studio Code for formatting a  well structured  docker-compose file.
                </p>
-                  <div class="ex2">
-
-                      <pre>version: "2"</pre>
-                      <pre>services:</pre>
-
-                      <pre> openrefine:</pre>
-                      <pre>  image: rhizomik/openrefine-rdf</pre>
-                      <pre>  ports:</pre>
-                      <pre>   - "3333:3333"</pre>
-                      <pre>  volumes:</pre>
-                      <pre>   - ./data-open-refine</pre>
-
-                      <pre> silk:</pre>
-                      <pre>   image: silkframework/silk-workbench</pre>
-                      <pre>   ports:</pre>
-                      <pre>    - "80:80"</pre>
-                      <pre>   volumes:</pre>
-                      <pre>    - ./data-silk</pre>
-
-                      <pre> fuseki:</pre>
-                      <pre>  image: secoresearch/fuseki</pre>
-                      <pre>  ports:</pre>
-                      <pre>   - "3030:3030"</pre>
-                      <pre>  environment:</pre>
-                      <pre>   - ADMIN_PASSWORD=admin</pre>
-                      <pre>   - ENABLE_DATA_WRITE=true</pre>
-                      <pre>   - ENABLE_UPDATE=true</pre>
-                      <pre>   - ENABLE_UPLOAD=true</pre>
-
-
-                     <pre> neo4j:</pre>
-                   <pre>    image: neo4j:3.5  </pre>
-                   <pre>    ports:  </pre>
-                        <pre>  - "7474:7474"  </pre>
-                        <pre>  - "7687:7687"  </pre>
-                      <pre>  environment:  </pre>
-                       <pre>  - NEO4J_dbms_unmanaged__extension__classes=semantics.extension=/rdf  </pre>
-                       <pre>  - NEO4J_dbms_security_procedures_whitelist=apoc.*,semantics.*  </pre>
-                       <pre>  - NEO4J_dbms_security_procedures_unrestricted=apoc.*,semantics.*  </pre>
-                       <pre>  - NEO4J_dbms_security_procedures_unrestricted=algo.,apoc.  </pre>
-                       <pre>  - NEO4J_dbms_security_procedures_unrestricted=apoc.trigger.*,apoc.meta.*  </pre>
-                       <pre>  - NEO4J_apoc_export_file_enabled=true  </pre>
-                       <pre>  - NEO4J_apoc_import_file_enabled=true  </pre>
-                       <pre>  - NEO4J_apoc_import_file_use__neo4j__config=true  </pre>
-                       <pre>  - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes  </pre>
-                       <pre>  - NEO4J_AUTH=neo4j/admin  </pre>
-                       <pre>  - SECURE_FILE_PERMISSIONS=yes  </pre>
-                       <pre>volumes:  </pre>
-                      <pre>  - $PWD/plugin_neo:/var/lib/neo4j/plugins  </pre>
-                      <pre>  - $PWD/data-neo4j:/var/lib/neo4j/import  </pre>
-
-
-                      <pre> pubby:</pre>
-                      <pre>  image: asanchez75/pubby:v0.3.3</pre>
-                      <pre>  ports:</pre>
-                      <pre>   - "8080:8080"</pre>
-                      <pre>  environment:</pre>
-                      <pre>   SPARQL_ENDPOINT: "http://dbpedia.org/sparql"</pre>
-                      <pre>   PROJECT_HOMEPAGE_URL: "http://dbpedia.org/"</pre>
-                      <pre>   PROJECT_NAME: "DBPEDIA"</pre>
-                      <pre>   DEFAULT_RESOURCE: "http://dbpedia.org/resource/Wikipedia"</pre>
-                      <pre>   DEFAULT_NAMED_GRAPH: "http://dbpedia.org"</pre>
-                      <pre>   COMMON_URI_PREFIX: "http://dbpedia.org/resource/"</pre>
-                      <pre>   WEB_RESOURCE_PREFIX: "resource/"</pre>
-                      <pre>   PUBBY_ROOT_URL: "http://localhost:8080/pubby/"</pre>
-
-                      <pre>  restart: always</pre>
-                      <pre>  tty: true</pre>
-
-
-                  </div>
     <p></p>
         <li>Step 4: From your project directory, start up your workspace by running <strong> docker-compose up -d </strong> </li>
            <p></p>
-           <div class="ex2"> <pre> $ docker-compose  up </pre>
+           <div class="ex2"> <pre> $ docker-compose  up -d </pre>
            </div>
            <p> Once the precedent steps are successfully completed, your <a href="/workspace"> Worsapce </a> is ready to work. </p>
 
