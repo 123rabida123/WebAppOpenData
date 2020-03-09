@@ -23,3 +23,9 @@ Opera ✔
 Edge x (not tested)
 Internet Explorer x (not tested)
 ```
+
+## Operating System
+```
+windows ✔ 
+Unix/Linux ✔ 
+```
