@@ -1,11 +1,33 @@
 # WebAppOpenData
-Plateform Pub_LOGD is an easy Toolkit, designed for users to improve services of Government Data.
+Plateform Pub_LOGD is an easy Toolkit and turnkey solution, 
+designed for users to improve services of Government with Open Data. 
+It is using powerful of linked Open Data technology and Docker technology .
 
+## Installation
+
+Step 1: install the docker on your machine via this link:
+
+- for Windows:  [Clik here](https://docs.docker.com/docker-for-windows/install/)
+- for Mac: [Clik here](https://docs.docker.com/docker-for-mac/install/)
+- for Ubuntu: [Clik here](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04)
+
+
+After you’ve successfully installed Docker Desktop, open a terminal and run **docker --version** to check the version of Docker installed on your machine.
+
+
+Step 2: install the docker Compose via this link: 
+
+- for Windows:  [Clik here](https://docs.docker.com/compose/install/#install-compose-on-windows-desktop-systems)
+- for Mac: [Clik here](https://docs.docker.com/compose/install/#install-compose-on-macos)
+- for Ubuntu: [Clik here](https://docs.docker.com/compose/install/#install-compose-on-linux-systems)
+
+After you’ve successfully installed Docker Desktop, open a terminal and run **docker-compose --version** to check the version of Docker compose installed on your machine.
 
 ## Getting Started
 ```
 git clone https://github.com/123rabida123/WebAppOpenData && cd WebAppOpenData
-mvn clean;mvn install;
+mvn clean;
+mvn install;
 docker build -t opendatav1 .
 cd DockerComposeFile
 docker-compose  up -d
@@ -16,12 +38,12 @@ After that start the Webpack server and open your browser at http://localhost:88
  
 ## Browser Support
 ```
-Chrome ✔    
-Firefox ✔
-Safari ✔
-Opera ✔
-Edge x (not tested)
-Internet Explorer x (not tested)
+- Chrome ✔    
+- Firefox ✔
+- Safari ✔
+- Opera ✔
+- Edge x (not tested)
+- Internet Explorer x (not tested)
 ```
 
 ## Operating System
