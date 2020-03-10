@@ -34,7 +34,24 @@ docker-compose  up -d
 or 
 docker-compose  up -d --force-recreate --build --remove-orphans
 ```
+
 After that start the Webpack server and open your browser at http://localhost:8888/ .
+
+
+optional): To see what is currently  services running.
+
+```
+cd DockerComposeFile
+docker ps
+```
+
+(optional): You can bring everything down.
+ 
+ ```
+ cd DockerComposeFile
+ docker-compose down
+ ```
+ 
  
 ## Browser Support
 ```
@@ -48,6 +65,6 @@ After that start the Webpack server and open your browser at http://localhost:88
 
 ## Operating System
 ```
-windows ✔ 
-Unix/Linux ✔ 
+- windows ✔ 
+- Unix/Linux ✔ 
 ```

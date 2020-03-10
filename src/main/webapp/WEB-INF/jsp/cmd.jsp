@@ -37,15 +37,31 @@
     <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
 
-<div class="container">
+<div >
 <h2>Frequently asked questions </h2>
     <ol>
-        <li> What is PUB_LOGD: </li>
+        <li> <a href="/guide"> What is  PUB_LOGD </a></li>
+        <p></p>
+        <li> <a href="https://github.com/123rabida123/WebAppOpenData"> Is PUB_LOGD open source? </a></li>
+        <p></p>
+        <li> <a href="/guide"> What file formats are supported by PUB_LOGD? </a></li>
+            <div >
+                <ul>
+                    <li>CSV</li>
+                    <li>GeoJSON</li>
+                    <li>JSON</li>
+                    <li>JSON lines</li>
+                    <li>KML</li>
+                    <li>OSM archives (OpenStreetMap)</li>
+                    <li>Shapefile</li>
+                    <li>MapInfo</li>
+                    <li>Excel</li>
+                    <li>OpenDocument Spreadsheet</li>
+                    <li>Remotely stored files for any of the above formats (HTTP or FTP)</li>
+                </ul>
+            </div>
 
     </ol>
-
-
-
 
 
 </div>

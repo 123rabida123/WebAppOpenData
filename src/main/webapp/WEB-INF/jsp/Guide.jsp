@@ -45,7 +45,7 @@
     <h2 class="h">Welcome to PUB_LOGD is always available to help users! </h2>
     <p>This plateform is easy Toolkit and turnkey solution, designed for users to improve services of Government with Open Data.
         It is using powerful of linked Open Data technology and Docker technology .</p>
-    <p> PUB_LOGD includes a unique set of integrated features:
+    <p> <strong>PUB_LOGD</strong> includes a unique set of integrated features:
      <ul>
        <li>Cleaning and unifying raw datasets.</li>
        <li>Enriching and transforming datasets to machine readable format.</li>
@@ -68,17 +68,8 @@
     </h3>
     <p>Here you can find a worksapce with a Guideline to help you to track the steps of visualization and publication of data.</p>
     <p>
-        <ol>
-               <p>
-                   This Compose file defines five services: Open-Refine, Silk, Fuseki, Neo4j, Pubby.
-               </p>
-
-        <p><li>(optional): To see what is currently  services running <strong> docker ps </strong> </li></p>
-        <p> <li>(optional): You can bring everything down, with the down command <strong> docker-compose down </strong>   </li></p>
-
-        </ol>
+        PUB_LOGD defines in <a href="/workspace">Workspace</a> five services: Open-Refine, Silk, Fuseki, Neo4j, Pubby.
     </p>
-
 
 
     <h3 id="data">

@@ -47,7 +47,8 @@
 
 
 <div class="container">
-    <h1> Methodology steps for operating open data </h1>
+
+    <h1 class="hh">Steps for operating open data</h1>
 
     <div id="stepProgressBar">
         <div class="step ">
