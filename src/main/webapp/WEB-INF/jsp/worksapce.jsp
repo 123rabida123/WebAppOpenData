@@ -55,7 +55,7 @@
             <p class="step-text">Transforming</p>
             <div class="bullet">1</div>
             <dir></dir>
-            <Button id="nextBtn"  onclick="myFunction('http://localhost:3333/')">OpenRefine</Button>
+            <Button id="nextBtn"  onclick="myFunction('http://openrefine:3333/')">OpenRefine</Button>
         </div>
         <div class="step">
             <p class="step-text"> Interlinking</p>
