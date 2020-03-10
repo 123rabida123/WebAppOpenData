@@ -71,5 +71,12 @@ docker ps
 
 ## Screenshot
 
-![image](https://cloud.githubusercontent.com/assets/9053854/24495974/fbf2e0cc-1547-11e7-846c-25b5fac7f6b1.png)
+![image](https://raw.githubusercontent.com/123rabida123/WebAppOpenData/master/Screenshot/2020-03-10-162619_1920x1056_scrot.png) 
 
+![image](https://raw.githubusercontent.com/123rabida123/WebAppOpenData/master/Screenshot/2020-03-07-173955_1920x1080_scrot.png) 
+
+![image](https://raw.githubusercontent.com/123rabida123/WebAppOpenData/master/Screenshot/neo4j-process.png)
+
+![image](https://raw.githubusercontent.com/123rabida123/WebAppOpenData/master/Screenshot/open-refine-process.png)
+
+![image](https://raw.githubusercontent.com/123rabida123/WebAppOpenData/master/Screenshot/open-refine-process.png)
