@@ -23,21 +23,6 @@ Step 2: install the docker Compose via this link:
 
 After you’ve successfully installed Docker Desktop, open a terminal and run **docker-compose --version** to check the version of Docker compose installed on your machine.
 
-## File Formats Supported 
-
-The PUB_LOGD platform natively supports the following file formats:
-
-- CSV
-- GeoJSON
-- JSON
-- JSON lines
-- KML
-- Shapefile
-- MapInfo
-- Excel
-- OpenDocument Spreadsheet
-
-You can find more details in our plateforme PUB_LOGD.
 
 
 ## Getting Started
@@ -85,6 +70,23 @@ docker ps
 - windows ✔ 
 - Unix/Linux ✔ 
 ```
+
+
+## File Formats Supported 
+
+The PUB_LOGD platform natively supports the following file formats:
+
+- CSV
+- GeoJSON
+- JSON
+- JSON lines
+- KML
+- Shapefile
+- MapInfo
+- Excel
+- OpenDocument Spreadsheet
+
+You can find more details in our plateforme PUB_LOGD.
 
 ## Screenshot
  
