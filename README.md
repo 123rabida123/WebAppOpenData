@@ -88,7 +88,7 @@ The PUB_LOGD platform natively supports the following file formats:
 
 You can find more details in our plateforme PUB_LOGD.
 
-## Screenshot
+## Screenshots
  
 
 | | |
