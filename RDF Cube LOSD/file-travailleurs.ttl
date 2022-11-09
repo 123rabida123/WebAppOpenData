@@ -1,0 +1,220 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://example.org/dataset/file-travailleurs> a qb:Dataset ;
+	rdfs:label "Census data grouped by stabel travailleurs" .
+
+_:node1deb39qulx1 a qb:DataStructureDefinition .
+
+_:node1deb39qulx2 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/province-tra> rdfs:label "Province-Tra" .
+
+_:node1deb39qulx2 qb:dimension <http://example.org/def/statistical-dimemsion/province-tra> .
+
+_:node1deb39qulx1 qb:compenent _:node1deb39qulx2 .
+
+_:node1deb39qulx3 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> rdfs:label "Pays-de-citoyenneté-niveau" .
+
+_:node1deb39qulx3 qb:dimension <http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> .
+
+_:node1deb39qulx1 qb:component _:node1deb39qulx3 .
+
+_:node1deb39qulx4 a qb:ComponentSpecifiaction .
+
+<http://example.org/def/statistical-dimemsion/travailleurs> rdfs:label "Travailleurs" .
+
+_:node1deb39qulx4 qb:measure <http://example.org/def/statistical-dimemsion/travailleurs> .
+
+_:node1deb39qulx1 qb:component _:node1deb39qulx4 .
+
+<http://example.org/dataset/file-travailleurs> qb:structure _:node1deb39qulx1 .
+
+<http://example.org/R%C3%A9gion+de+Bruxelles-Capitale> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Région de Bruxelles-Capitale" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/R%C3%A9gion+de+Bruxelles-Capitale> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "256,666" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "113,147" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "12" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "555" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "370,380" .
+
+<http://example.org/Province+d%27Anvers> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province d'Anvers" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+d%27Anvers> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "687,259" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "58,897" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "30" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "548" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "746,734" .
+
+<http://example.org/Province+du+Limbourg> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province du Limbourg" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+du+Limbourg> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "332,637" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "31,057" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "6" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "91" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "363,791" .
+
+
+<http://example.org/Province+de+Flandre+orientale> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province de Flandre orientale" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+de+Flandre+orientale> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "616,716" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "22,579" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "18" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "287" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "639,600" .
+
+
+<http://example.org/Province+du+Brabant+flamand> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province du Brabant flamand" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+du+Brabant+flamand> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "445,235" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "32,171" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "15" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "218" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "477,639" .
+
+<http://example.org/Province+de+Flandre+occidentale> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province de Flandre occidentale" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+de+Flandre+occidentale> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "492,290" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "13,152" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "27" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "200" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "505,669" .
+
+<http://example.org/Province+du+Brabant+wallon> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province du Brabant wallon" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+du+Brabant+wallon> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "142,135" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "13,712" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "2" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "12" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "155,861" .
+
+<http://example.org/Province+du+Hainaut> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province du Hainaut" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+du+Hainaut> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "420,206" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "50,001" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "10" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "47" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "470,264" .
+
+<http://example.org/Province+de+Li%C3%A9ge> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province de Liége" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+de+Li%C3%A9ge> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "368,317" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "35,442" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "20" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "203" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "403,982" .
+
+<http://example.org/Province+de+Luxembourg> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province de Luxembourg" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+de+Luxembourg> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "102,834" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "6,833" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "7" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "22" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "109,696" .
+
+<http://example.org/Province+de+Namur> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Province de Namur" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Province+de+Namur> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "181,626" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "7,666" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "15" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "48" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "189,355" .
+
+
+<http://example.org/Belgique> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-travailleurs> ;
+	rdfs:label "Belgique" ;
+	<http://example.org/def/statistical-dimemsion/province-tra> <http://example.org/Belgique> ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Belges" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "4,045,921" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Etrangers" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "384,657" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Apatrides" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "162" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Non indiqué" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "2231" ;
+	<http://example.org/def/statistical-dimemsion/Pays-de-citoyenneté-niveau> "Total" ;
+	<http://example.org/def/statistical-dimemsion/travailleurs> "4,432,971" .
