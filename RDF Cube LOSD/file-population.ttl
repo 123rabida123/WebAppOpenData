@@ -1,0 +1,197 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://example.org/dataset/file-population> a qb:DataSet ;
+	rdfs:label "Census data grouped by stabel population" .
+
+_:node1depk0gsjx1 a qb:DataStructureDefinition .
+
+_:node1depk0gsjx2 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/provincepop> a qb:MeasureProperty ;
+	rdfs:label "Province" .
+
+_:node1depk0gsjx2 qb:dimension <http://example.org/def/statistical-dimemsion/provincepop> .
+
+_:node1depk0gsjx1 qb:component _:node1depk0gsjx2 .
+
+_:node1depk0gsjx3 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/situation-marche> a qb:MeasureProperty ;
+	rdfs:label "Situation-marche" .
+
+_:node1depk0gsjx3 qb:dimension <http://example.org/def/statistical-dimemsion/situation-marche> .
+
+_:node1depk0gsjx1 qb:component _:node1depk0gsjx3 .
+
+_:node1depk0gsjx4 a qb:ComponentSpecification .
+
+<http://example.org/def/statistical-dimemsion/population> a qb:MeasureProperty ;
+	rdfs:label "Population" .
+
+_:node1depk0gsjx4 qb:measure <http://example.org/def/statistical-dimemsion/population> .
+
+_:node1depk0gsjx1 qb:component _:node1depk0gsjx4 .
+
+<http://example.org/dataset/file-population> qb:structure _:node1depk0gsjx1 .
+
+<http://example.org/dataset/file-population/rgion-de-bruxelles-capitale> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/rgion-de-bruxelles-capitale> rdfs:label "Région de Bruxelles-Capitale" .
+
+<http://example.org/dataset/file-population/rgion-de-bruxelles-capitale> <http://example.org/def/statistical-dimemsion/province> <http://example.org/rgion-de-bruxelles-capitale> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "443,877" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "692,901" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,136,778" .
+
+<http://example.org/dataset/file-population/province-danvers> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-danvers> rdfs:label "Province d'Anvers" .
+
+<http://example.org/dataset/file-population/province-danvers> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-danvers> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "793,236" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "980,031" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,773,267" .
+
+<http://example.org/dataset/file-population/province-du-limbourg> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-du-limbourg> rdfs:label "Province du Limbourg" .
+
+<http://example.org/dataset/file-population/province-du-limbourg> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-du-limbourg> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "385,651" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "461,200" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "846,851" .
+
+<http://example.org/dataset/file-population/province-de-flandre-orientale> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-de-flandre-orientale> rdfs:label "Province de Flandre orientale" .
+
+<http://example.org/dataset/file-population/province-de-flandre-orientale> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-de-flandre-orientale> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "671,549" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "777,379" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,448,928" .
+
+<http://example.org/dataset/file-population/province-du-brabant-flamand> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-du-brabant-flamand> rdfs:label "Province du Brabant flamand" .
+
+<http://example.org/dataset/file-population/province-du-brabant-flamand> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-du-brabant-flamand> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "496,566" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "592,126" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,088,692" .
+
+<http://example.org/dataset/file-population/province-de-flandre-occidentale> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-de-flandre-occidentale> rdfs:label "Province de Flandre occidentale" .
+
+<http://example.org/dataset/file-population/province-de-flandre-occidentale> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-de-flandre-occidentale> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "528,270" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "639,732" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,168,002" .
+
+<http://example.org/dataset/file-population/province-du-brabant-wallon> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-du-brabant-wallon> rdfs:label "Province du Brabant wallon" .
+
+<http://example.org/dataset/file-population/province-du-brabant-wallon> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-du-brabant-wallon> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "169,270" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "214,378" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "383,648" .
+
+<http://example.org/dataset/file-population/province-du-hainaut> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-du-hainaut> rdfs:label "Province du Hainaut" .
+
+<http://example.org/dataset/file-population/province-du-hainaut> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-du-hainaut> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "550,932" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "768,813" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,319,745" .
+
+<http://example.org/dataset/file-population/province-de-lige> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-de-lige> rdfs:label "Province de Liège" .
+
+<http://example.org/dataset/file-population/province-de-lige> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-de-lige> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "462,803" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "619,333" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "1,082,136" .
+
+<http://example.org/dataset/file-population/province-de-luxembourg> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-de-luxembourg> rdfs:label "Province de Luxembourg" .
+
+<http://example.org/dataset/file-population/province-de-luxembourg> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-de-luxembourg> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "119,693" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "153,512" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "273,205" .
+
+<http://example.org/dataset/file-population/province-de-namur> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/province-de-namur> rdfs:label "Province de Namur" .
+
+<http://example.org/dataset/file-population/province-de-namur> <http://example.org/def/statistical-dimemsion/province> <http://example.org/province-de-namur> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "212,213" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "267,173" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "479,386" .
+
+<http://example.org/dataset/file-population/belgique> a qb:Observation ;
+	qb:dataSet <http://example.org/dataset/file-population> .
+
+<http://example.org/belgique> rdfs:label "Belgique" .
+
+<http://example.org/dataset/file-population/belgique> <http://example.org/def/statistical-dimemsion/province> <http://example.org/belgique> ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes actives (travailleur ou chômeur)" ;
+	<http://example.org/def/statistical-dimemsion/population> "4,834,060" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Personnes inactives" ;
+	<http://example.org/def/statistical-dimemsion/population> "6,166,578" ;
+	<http://example.org/def/statistical-dimemsion/situation-marche> "Total" ;
+	<http://example.org/def/statistical-dimemsion/population> "11,000,638" .
