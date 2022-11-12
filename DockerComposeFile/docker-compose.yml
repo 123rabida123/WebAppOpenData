@@ -7,18 +7,20 @@ services:
     - "8888:8080"
  
  openrefine:
-  image: rhizomik/openrefine-rdf
+  image: vimagick/openrefine
   ports:
-    - "3333:3333"
+     - "3333:3333"
   volumes:
-    - ./data-open-refine
+     - ./data:/data
+  restart: unless-stopped
+
 
  silk:
   image: silkframework/silk-workbench
   ports:
     - "80:80"
   volumes:
-    - ./data-silk
+    - ./data1-silk
 
  fuseki:
   image: secoresearch/fuseki
