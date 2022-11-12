@@ -52,10 +52,16 @@
 
     <div id="stepProgressBar">
         <div class="step ">
-            <p class="step-text">Transforming</p>
+            <p class="step-text">Cleaning</p>
             <div class="bullet">1</div>
             <dir></dir>
             <Button id="nextBtn"  onclick="myFunction('http://localhost:3333/')">OpenRefine</Button>
+        </div>
+        <div class="step ">
+            <p class="step-text">modeling</p>
+            <div class="bullet">1</div>
+            <dir></dir>
+            <Button id="nextBtn"  onclick="myFunction('http://localhost:3333/')">Sparqlify</Button>
         </div>
         <div class="step">
             <p class="step-text"> Interlinking</p>
