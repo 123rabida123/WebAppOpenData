@@ -3,7 +3,7 @@ Plateform Pub_LOGD is an easy Toolkit and turnkey solution,
 designed for users to improve services of Government with Open Data. 
 It is using powerful of linked Open Data technology and Docker technology .
 
-This framework is also used to publish LOSD (Linked Open Statistical data). We therefore use the part of the framework named PLOSD.
+This framework is also used to publish LOSD (Linked Open Statistical data). We therefore use the part of the framework named Pub_LOGD Extension, which contains the Sparqlify.
 
 ## Installation
 
